@@ -1,4 +1,4 @@
-public class Diamond
+public class HollowDiamondSideFill
 {
     public static void main(String S[])
     {
@@ -6,11 +6,15 @@ public class Diamond
 
         for(i=1;i<=n;i++)
         {
-            for(j=1;j<=n-i;j++)
+            for(j=1;j<=(n- i + 1);j++)
+            {
+                System.out.print("* ");
+            }
+            for(k=1;k<=(2 * i - 2);k++)
             {
                 System.out.print("  ");
             }
-            for(k=1;k<=(2 * i - 1);k++)
+            for(k=1;k<=(n - i + 1);k++)
             {
                 System.out.print("* ");
             }
@@ -19,11 +23,15 @@ public class Diamond
 
         for(i=n-1;i>=1;i--)
         {
-            for(j=1;j<=n-i;j++)
+             for(j=1;j<=(n- i + 1);j++)
+            {
+                System.out.print("* ");
+            }
+            for(k=1;k<=(2 * i - 2);k++)
             {
                 System.out.print("  ");
             }
-            for(k=1;k<=(2 * i - 1);k++)
+            for(k=1;k<=(n - i + 1);k++)
             {
                 System.out.print("* ");
             }
